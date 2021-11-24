@@ -43,8 +43,11 @@ int podciag (int arr[], int n)
     }
         // Jeśli w ciągu nie znajdziemy zmiennej sum równej 0 to oznacza że nie ma w naszym ciągu,
         // podciągu o równej liczbie zer i jedynek
-        if (maks == -1) 
-            cout << "Brak podciągów";
+    if (maks == -1) {
+        cout << "Brak podciągów";
+        cin.get();
+        return 0;
+    }
         // W przeciwnym razie wypisujemy nasz podciąg zaczynając od zmiennej zacznij, a kończąc na zmiennej suma,
         // której przypisujemy wartość sumy zacznij i maks oraz różnicy 1
         else {
